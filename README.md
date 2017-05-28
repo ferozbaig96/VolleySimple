@@ -22,14 +22,14 @@ To include this library to your project add dependency in **build.gradle** file:
     
     dependencies {
         ...
-        compile 'com.github.ferozbaig96:VolleySimple:1.0
+        compile 'com.github.ferozbaig96:VolleySimple:1.1
     }
 ```
 
 Then in your Activity :
 
 ```JAVA
-    RequestManager.getInstance(this)
+    VolleySimple.getInstance(this)
                 .placeJsonObjectRequest(
                 "myTag",  // tag (optional)
                 url,      // url of the request
@@ -65,11 +65,11 @@ Apart from JsonObjectRequest, you can make the following requests
 
 ```JAVA
     // StringRequest
-    RequestManager.getInstance(this)
+    VolleySimple.getInstance(this)
                 .placeStringRequest(...);
     
     // JsonArrayRequest
-    RequestManager.getInstance(this)
+    VolleySimple.getInstance(this)
                 .placeJsonArrayRequest(...);
                 
 ```
@@ -79,7 +79,7 @@ Apart from JsonObjectRequest, you can make the following requests
 ### Set timeout for requests
 
 ```JAVA
-    RequestManager.getInstance(this)
+    VolleySimple.getInstance(this)
                 .setInitialTimeoutMs(5000) // Default value = 3000 ms
                 .placeJsonObjectRequest(...);         
 ```
@@ -87,7 +87,7 @@ Apart from JsonObjectRequest, you can make the following requests
 ### Set maximum no. of retries for requests
 
 ```JAVA
-    RequestManager.getInstance(this)
+    VolleySimple.getInstance(this)
                 .setMaxNoOfTries(4) // Default value = 2
                 .placeJsonObjectRequest(...);         
 ```
@@ -118,7 +118,8 @@ GSON for handling responses
 
 | Version | Changes                         |
 | --- | --- |
-| v.1.0.0 | First public release            |
+| v.1.0 | First public release            |
+| v.1.1 | Minor changes                   |
 
 <br />
 
