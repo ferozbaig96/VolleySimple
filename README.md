@@ -42,7 +42,7 @@ Then in your Activity :
 Then make your Activity implement ServerCallback
 
 ```JAVA
-    public class MainActivity extends AppCompatActivity implements **ServerCallback** {
+    public class MainActivity extends AppCompatActivity implements ServerCallback {
 ```
 
 Handle the response in your Activity 
