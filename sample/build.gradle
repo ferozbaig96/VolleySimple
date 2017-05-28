@@ -24,7 +24,9 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
-    compile project(':library')
+
+    // VolleySimple
+    compile 'com.github.ferozbaig96:VolleySimple:1.0'
 
     // GSON
     compile 'com.google.code.gson:gson:2.8.0'
