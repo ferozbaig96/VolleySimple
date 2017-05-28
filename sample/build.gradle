@@ -25,8 +25,7 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
 
-    // VolleySimple
-    compile 'com.github.ferozbaig96:VolleySimple:1.0'
+    compile project(':library')
 
     // GSON
     compile 'com.google.code.gson:gson:2.8.0'

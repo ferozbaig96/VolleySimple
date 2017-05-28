@@ -28,31 +28,31 @@ import java.util.Map;
  */
 
 @SuppressWarnings({"unused", "unchecked"})
-public class RequestManager {
+public class VolleySimple {
 
     @SuppressLint("StaticFieldLeak")
-    private static RequestManager Instance;
+    private static VolleySimple Instance;
     private RequestQueue mRequestQueue;
     private RetryPolicy retryPolicy;
     private Context mCtx;
     private int initialTimeoutInMs = 3000;
     private int maxNoOfTries = 2;
 
-    private RequestManager(Context context) {
+    private VolleySimple(Context context) {
         mCtx = context;
         mRequestQueue = getRequestQueue();
         retryPolicy = new DefaultRetryPolicy(initialTimeoutInMs, maxNoOfTries, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
     }
 
     /**
-     * Returns the singleton instance of {@link RequestManager}
+     * Returns the singleton instance of {@link VolleySimple}
      *
      * @param context context of the respective Activity
-     * @return Instance of {@link RequestManager}
+     * @return Instance of {@link VolleySimple}
      */
-    public static RequestManager getInstance(Context context) {
+    public static VolleySimple getInstance(Context context) {
         if (Instance == null)
-            Instance = new RequestManager(context);
+            Instance = new VolleySimple(context);
         return Instance;
     }
 
@@ -82,9 +82,9 @@ public class RequestManager {
      * Default value = 3000ms
      *
      * @param initialTimeoutMs The initial timeout for the policy (in milliseconds)
-     * @return Current Instance of {@link RequestManager}
+     * @return Current Instance of {@link VolleySimple}
      */
-    public RequestManager setInitialTimeoutMs(int initialTimeoutMs) {
+    public VolleySimple setInitialTimeoutMs(int initialTimeoutMs) {
         this.initialTimeoutInMs = initialTimeoutMs;
         retryPolicy = new DefaultRetryPolicy(initialTimeoutMs, maxNoOfTries, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
         return Instance;
@@ -95,9 +95,9 @@ public class RequestManager {
      * Default value = 2
      *
      * @param maxNoOfTries The maximum number of retries.
-     * @return Current Instance of {@link RequestManager}
+     * @return Current Instance of {@link VolleySimple}
      */
-    public RequestManager setMaxNoOfTries(int maxNoOfTries) {
+    public VolleySimple setMaxNoOfTries(int maxNoOfTries) {
         this.maxNoOfTries = maxNoOfTries;
         retryPolicy = new DefaultRetryPolicy(initialTimeoutInMs, maxNoOfTries, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
         return Instance;

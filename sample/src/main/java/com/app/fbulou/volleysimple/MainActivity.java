@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // String response (GET)
         url = "http://www.newthinktank.com/wordpress/lotr.txt";
-        RequestManager.getInstance(this)
+        VolleySimple.getInstance(this)
                 .placeStringRequest("s GET", url, Request.Method.GET, null, null, this);
 
         // jsonObject response. POST with params
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         params.put("name", "foo");
         params.put("job", "bar");
 
-        RequestManager.getInstance(this)
+        VolleySimple.getInstance(this)
                 .placeStringRequest("jo POST params", url, Request.Method.POST, params, null, this);
     }
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //jsonObject response (GET)
         url = "https://reqres.in/api/users?page=1";
-        RequestManager.getInstance(this)
+        VolleySimple.getInstance(this)
                 .placeJsonObjectRequest("JOR - jo GET", url, Request.Method.GET, null, null, this);
 
         //jsonObject response. POST with params
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         }
 
-        RequestManager.getInstance(this)
+        VolleySimple.getInstance(this)
                 .placeJsonObjectRequest("JOR - jo POST params", url, Request.Method.POST, jsonObjectParams, null, this);
     }
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //jsonArray response (GET)
         url = "http://jsonplaceholder.typicode.com/posts";
-        RequestManager.getInstance(this)
+        VolleySimple.getInstance(this)
                 .placeJsonArrayRequest("JAR - ja GET", url, Request.Method.GET, null, null, this);
 
     }
