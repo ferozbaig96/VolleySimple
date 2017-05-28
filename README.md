@@ -15,12 +15,14 @@ To include this library to your project add dependency in **build.gradle** file:
 
     repositories {
         jcenter()
-        **maven { url 'https://www.jitpack.io' }**
+        ...
+        maven { url 'https://www.jitpack.io' }
 
     }
     
     dependencies {
-        **compile 'com.github.ferozbaig96:VolleySimple:1.0'**
+        ...
+        compile 'com.github.ferozbaig96:VolleySimple:1.0
     }
 ```
 
@@ -37,7 +39,7 @@ Then in your Activity :
                 this);     // callback for handling response
 ```
 
-Then make your Activity implement **ServerCallback**
+Then make your Activity implement ServerCallback
 
 ```JAVA
     public class MainActivity extends AppCompatActivity implements **ServerCallback** {
@@ -78,7 +80,7 @@ Apart from JsonObjectRequest, you can make the following requests
 
 ```JAVA
     RequestManager.getInstance(this)
-                .setInitialTimeoutMs(5000) // Default value = 3000
+                .setInitialTimeoutMs(5000) // Default value = 3000 ms
                 .placeJsonObjectRequest(...);         
 ```
 
