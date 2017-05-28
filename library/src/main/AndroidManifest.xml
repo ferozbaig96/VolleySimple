@@ -2,6 +2,7 @@
 
     package="com.app.fbulou.volleysimplelibrary">
     <!--Renamed package name here (conflict with sample(app) package name-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"

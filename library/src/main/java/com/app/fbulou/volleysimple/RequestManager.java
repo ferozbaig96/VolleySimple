@@ -76,15 +76,18 @@ public class RequestManager {
         getRequestQueue().add(request);
     }
 
+
     /**
      * Sets the initial timeout.
      * Default value = 3000ms
      *
      * @param initialTimeoutMs The initial timeout for the policy (in milliseconds)
+     * @return Current Instance of {@link RequestManager}
      */
-    public void setInitialTimeoutMs(int initialTimeoutMs) {
+    public RequestManager setInitialTimeoutMs(int initialTimeoutMs) {
         this.initialTimeoutInMs = initialTimeoutMs;
         retryPolicy = new DefaultRetryPolicy(initialTimeoutMs, maxNoOfTries, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+        return Instance;
     }
 
     /**
@@ -92,10 +95,12 @@ public class RequestManager {
      * Default value = 2
      *
      * @param maxNoOfTries The maximum number of retries.
+     * @return Current Instance of {@link RequestManager}
      */
-    public void setMaxNoOfTries(int maxNoOfTries) {
+    public RequestManager setMaxNoOfTries(int maxNoOfTries) {
         this.maxNoOfTries = maxNoOfTries;
         retryPolicy = new DefaultRetryPolicy(initialTimeoutInMs, maxNoOfTries, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+        return Instance;
     }
 
     /**
