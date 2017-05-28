@@ -22,7 +22,7 @@ To include this library to your project add dependency in **build.gradle** file:
     
     dependencies {
         ...
-        compile 'com.github.ferozbaig96:VolleySimple:1.1
+        compile 'com.github.ferozbaig96:VolleySimple:1.1'
     }
 ```
 
