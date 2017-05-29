@@ -5,7 +5,7 @@ Android Library to make API calls simpler using Google Volley
 [![](https://jitpack.io/v/ferozbaig96/VolleySimple.svg)](https://jitpack.io/#ferozbaig96/VolleySimple)
 
 ### Show some :heart:
-[![GitHub stars](https://img.shields.io/github/stars/ferozbaig96/VolleySimple.svg?style=social&label=Star)](https://github.com/ferozbaig96/VolleySimple) [![GitHub forks](https://img.shields.io/github/forks/ferozbaig96/VolleySimple.svg?style=social&label=Fork)](https://github.com/ferozbaig96/VolleySimple/fork) [![GitHub watchers](https://img.shields.io/github/watchers/ferozbaig96/VolleySimple.svg?style=social&label=Watch)](https://github.com/ferozbaig96/VolleySimple) [![GitHub followers](https://img.shields.io/github/followers/ferozbaig96.svg?style=social&label=Follow)](https://github.com/nisrulz/UploadToJitpack)  
+[![GitHub stars](https://img.shields.io/github/stars/ferozbaig96/VolleySimple.svg?style=social&label=Star)](https://github.com/ferozbaig96/VolleySimple) [![GitHub forks](https://img.shields.io/github/forks/ferozbaig96/VolleySimple.svg?style=social&label=Fork)](https://github.com/ferozbaig96/VolleySimple/fork) [![GitHub watchers](https://img.shields.io/github/watchers/ferozbaig96/VolleySimple.svg?style=social&label=Watch)](https://github.com/ferozbaig96/VolleySimple) [![GitHub followers](https://img.shields.io/github/followers/ferozbaig96.svg?style=social&label=Follow)](https://github.com/ferozbaig96/VolleySimple)  
 
 ## Setup and usage
 
